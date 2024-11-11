@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/yipsimba/straitsx/contracts/token.sol": {
-      "lastModificationDate": 1731244186807,
-      "contentHash": "b2351233b4cc5fab31209bd39f8a934d",
+      "lastModificationDate": 1731308365543,
+      "contentHash": "b32c9404bfb13c1f1443c8ece5e4ecd0",
       "sourceName": "contracts/token.sol",
       "solcConfig": {
         "version": "0.8.27",
@@ -29,9 +29,7 @@
           }
         }
       },
-      "imports": [
-        "hardhat/console.sol"
-      ],
+      "imports": [],
       "versionPragmas": [
         "^0.8.0"
       ],
