@@ -1,0 +1,25 @@
+to deploy a contract:
+- npx hardhat ignition deploy ./ignition/modules/Token.js --network sepolia
+
+
+to verify the contract on the network:
+- npx hardhat verify --network sepolia <CONTRACT_ADDRESS>
+
+
+Solidity notes:
+
+- Adding that variables has to be stored in memory is required for all reference types  - such as arrays, structs, mappings, and strings.
+- It's convention (but not required) to start function parameter variable names with an underscore (_) in order to differentiate them from global variables.
+- Pure functions means to not even accessing any data in the app/ contract. Just operating based on function parameters. but lol might as well do off chain
+- Events, a way to let front end know of a transaction that occurred on chain. Kinda like pub sub / server sent events
+
+visibilities:
+- private / public
+- internal / external 
+  1. internal is also accessible to contracts that inherit from it
+  2. external functions can ONLY be called outside the contract
+
+Interfaces:
+- to interact with other deployed contracts, use Interfaces
+- syntax is horrible by using the same keyword contract
+- naming convention of ContractInterface
