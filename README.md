@@ -38,3 +38,13 @@ Deposited 500 tokens from second account
 Withdrawn tokens after 5 minutes
 Final balance of second account: 1010n
 ```
+
+### Deployment & verification
+
+to deploy a contract:
+
+- npx hardhat ignition deploy ./ignition/modules/Token.js --network sepolia
+
+to verify the contract on the network:
+
+- npx hardhat verify --network sepolia <CONTRACT_ADDRESS>
