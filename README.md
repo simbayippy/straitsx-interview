@@ -11,6 +11,7 @@ https://sepolia.etherscan.io/address/0x2DCdc9a5E485f350D622C968648D2A29FbAaA949#
 A few considerations made:
 
 - For withdrawals, ensured that deposits are cleared before transferring tokens, to prevent reentrancy attacks
+- Created a public view function of earnedInterest() for users to check their interest earned
 - removed console.log from token.sol for actual deployment since only acts to eat up gas
 
 ## Task 2

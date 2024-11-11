@@ -1,3 +1,7 @@
 # Dependencies
 node_modules/
 .pnpm-store/
+
+# Ignition deployments and build info
+ignition/deployments/
+artifacts/
