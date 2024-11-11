@@ -10,9 +10,10 @@ https://sepolia.etherscan.io/address/0x2DCdc9a5E485f350D622C968648D2A29FbAaA949#
 
 A few considerations made:
 
-- For withdrawals, ensured that deposits are cleared before transferring tokens, to prevent reentrancy attacks
-- Created a public view function of earnedInterest() for users to check their interest earned
-- removed console.log from token.sol for actual deployment since only acts to eat up gas
+- For withdrawals, ensured that deposits are cleared before transferring tokens, to prevent reentrancy attacks.
+- Created a public view function of earnedInterest() for users to check their interest earned.
+- Added some testcases under /test to verify implementation details.
+- removed console.log from token.sol for actual deployment since only acts to eat up gas.
 
 ## Task 2
 
@@ -26,7 +27,7 @@ npx hardhat run scripts/interact.js
 
 Expected result should be that the final balance of the depositer (second account) is 1010 tokens (500 \* 1.02) + 500 = 1010
 
-From console logs:
+Console logs:
 
 ```
 Deploying contracts with account: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
