@@ -18,13 +18,13 @@ A few considerations made:
 
 To run and test the implementation, make sure you have hardhard installed.
 
-Next, simply run the cli command:
+Next, simply run the cli command to test on hardhat network:
 
 ```
 npx hardhat run scripts/interact.js
 ```
 
-Expected result should be that the final balance of the depositer (second account) is 1010 tokens (500 \* 1.02) + 500/
+Expected result should be that the final balance of the depositer (second account) is 1010 tokens (500 \* 1.02) + 500 = 1010
 
 From console logs:
 
